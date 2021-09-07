@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Instagram post</title>
+  </head>
+  <body>
+    <div class="post">
+      <div class="header">
+        <div class="thumbnail-img">
+          <img
+            class="html-thumbnail"
+            src="data:image/png;base64,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"
+          />
+          <div class="left-side-text">
+            <div class="bold-title">HTML 5</div>
+            <div class="title-location">Santiago de Chile</div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <img
+            class="options-dots"
+            src="https://cdn.icon-icons.com/icons2/2718/PNG/512/dots_three_vertical_icon_174545.png"
+          />
+        </div>
+      </div>
+      <div class="picture">
+        <img
+          class="picture-post"
+          src="https://mymodernmet.com/wp/wp-content/uploads/2020/11/International-Landscape-Photographer-Year-PhotographER-1st-KelvinYuen-2.jpg"
+        />
+      </div>
+      <div class="footer">
+        <div class="icons">
+          <div class="like-icon">
+            <img
+              class="like-button"
+              src="https://www.clipartmax.com/png/full/357-3576861_image-instagram-heart-icon-svg.png"
+            />
+          </div>
+          <div class="comment-icon">
+            <img
+              class="comment-button"
+              src="https://www.pngitem.com/pimgs/m/21-212930_transparent-square-speech-bubble-png-transparent-instagram-comment.png"
+            />
+          </div>
+          <div class="dm-icon">
+            <img
+              class="dm-button"
+              src="https://image.flaticon.com/icons/png/512/4406/4406119.png"
+            />
+          </div>
+
+          <div class="save-icon">
+            <img
+              class="save-button"
+              src="https://cdn141.picsart.com/328472098003211.png?type=webp&to=min&r=640"
+            />
+          </div>
+        </div>
+        <div class="likes">
+          <p>
+            Liked by <strong>4GeeksAcademy</strong>, <strong>Edgar</strong> and
+            <strong>600 others</strong>.
+          </p>
+        </div>
+        <div class="caption">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
